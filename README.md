@@ -26,10 +26,7 @@
 Фреймворк спроектирован по принципу строгого разделения обязанностей (Separation of Concerns):
 
 ```text
-understand_ml/
-├── __init__.py
 ├── types.py          # Enum-перечисления типов слоев (LayerType)
-├── decorators.py     # Декоратор @numpy_vectorized для гибридного ускорения
 ├── layers.py         # Слои: BaseLayer, LinearLayer, BatchNormLayer, DropoutLayer, Conv2DLayer, FlattenLayer, ConvResidualBlock
 ├── activations.py    # Функции активации: Linear, ReLU, Sigmoid, Softmax (с фабриками Regression/Classification)
 ├── losses.py         # Функции потерь и их производные (MSE, MAE, RMSE, BCE, CCE)
